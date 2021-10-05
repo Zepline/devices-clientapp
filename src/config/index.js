@@ -4,4 +4,4 @@ const defaults = {
     deviceApiEndpoint: "http://localhost:3000/devices",
 }
 
-module.exports = { defaults} ;
+module.exports = { defaults };

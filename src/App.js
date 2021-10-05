@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import logo from './imgs/logo.png';
 import { defaults } from './config/index';
+import Sidebar from './components/sidebar/Sidebar.js';
 import DevicesTable from './components/tables/DevicesTable.js';
 import restrictSpecialCharacters from './components/helpers/string/restrictSpecialCharacters.js';
 import axios from 'axios';
@@ -131,7 +131,7 @@ class App extends Component {
 
     return (
       <div className="root-container">
-        <div className="sidebar-container"><img className="sidebar-icon-img" src={logo} alt="" /></div>
+        <Sidebar />
         <div className="App">
           <div className="devices-table-add-device-button-container">
             <div className="devices-table-add-device-button" onClick={() => this.setState({ showAddDevicePopup: true })}>＋ Add Device</div>
