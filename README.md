@@ -188,7 +188,6 @@ The dashboard table view is built using [React-Table](https://github.com/tannerl
 &nbsp;
 
 ## Testing
----
 ### What is tested (_Unit Tests_):
 
 - Successful rendering of each component.
@@ -204,4 +203,3 @@ Run existing unit tests.
 ```sh
 npm test
 ```
----
