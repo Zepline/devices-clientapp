@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { defaults } from './config/index';
 import Sidebar from './components/sidebar/Sidebar.js';
 import DevicesTable from './components/tables/DevicesTable.js';
+import Loader from './components/loader/Loader.js';
 import restrictSpecialCharacters from './components/helpers/string/restrictSpecialCharacters.js';
 import axios from 'axios';
 import './App.css';
@@ -11,6 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isLoading: true,
       tableSortSetting: this.props.sortSetting,
       showAddDevicePopup: false,
       system_name: '',
@@ -20,6 +22,14 @@ class App extends Component {
 
     this.changeHandler = this.changeHandler.bind(this);
     this.submitHandler = this.submitHandler.bind(this);
+  }
+
+  componentDidMount() {
+
+    setTimeout(function () {
+      this.setState({ isLoading: false })
+
+    }.bind(this), 1000)
   }
 
   changeHandler = (e) => {
@@ -129,26 +139,33 @@ class App extends Component {
 
   render() {
 
-    return (
-      <div className="root-container">
-        <Sidebar />
-        <div className="App">
-          <div className="devices-table-add-device-button-container">
-            <div className="devices-table-add-device-button" onClick={() => this.setState({ showAddDevicePopup: true })}>＋ Add Device</div>
+    if (this.state.isLoading) {
+
+      return <Loader />
+
+    } else {
+     
+      return (
+        <div className="root-container">
+          <Sidebar />
+          <div className="App">
+            <div className="devices-table-add-device-button-container">
+              <div className="devices-table-add-device-button" onClick={() => this.setState({ showAddDevicePopup: true })}>＋ Add Device</div>
+            </div>
+            <div className="devices-table-sort-by-container">
+              <div className="devices-table-sort-filter-title">Sort by:</div>
+              <select className="devices-table-select-sort-filter" onChange={(setting) => this.updateTableSortSetting(setting)}>
+                <option value="">None</option>
+                <option value="system_name">System Name</option>
+                <option value="hdd_capacity">HDD Capacity</option>
+              </select>
+            </div>
+            {this.showAddDevicePopup()}
+            {this.refreshDevicesTable()}
           </div>
-          <div className="devices-table-sort-by-container">
-            <div className="devices-table-sort-filter-title">Sort by:</div>
-            <select className="devices-table-select-sort-filter" onChange={(setting) => this.updateTableSortSetting(setting)}>
-              <option value="">None</option>
-              <option value="system_name">System Name</option>
-              <option value="hdd_capacity">HDD Capacity</option>
-            </select>
-          </div>
-          {this.showAddDevicePopup()}
-          {this.refreshDevicesTable()}
         </div>
-      </div>
-    )
+      )
+    }
   }
 }
 

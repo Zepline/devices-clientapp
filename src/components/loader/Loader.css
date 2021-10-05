@@ -1,0 +1,43 @@
+.loading-screen {
+    background-color: #2b4259;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.pulsate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 55px;
+    margin-left: -89px;
+    letter-spacing: 6px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: AppleSDGothicNeo-thin;
+    -webkit-animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    color: rgba(255, 255, 255, 0.30);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 100%;
+    filter: invert(23.35%) sepia(49%) saturate(462%) hue-rotate(169deg) brightness(73.3%) contrast(101.5%);
+}
