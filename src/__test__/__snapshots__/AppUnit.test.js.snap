@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the App class component matches the snapshot 1`] = `
+<div
+  className="root-container"
+  data-testid="root-container"
+>
+  <div
+    className="sidebar-container"
+  >
+    <img
+      alt=""
+      className="sidebar-icon-img"
+      src="logo.png"
+    />
+  </div>
+  <div
+    className="App"
+  >
+    <div
+      className="devices-table-add-device-button-container"
+    >
+      <div
+        className="devices-table-add-device-button"
+        data-testid="add-device-button"
+        onClick={[Function]}
+      >
+        ＋ Add Device
+      </div>
+    </div>
+    <div
+      className="devices-table-sort-by-container"
+    >
+      <div
+        className="devices-table-sort-filter-title"
+      >
+        Sort by:
+      </div>
+      <select
+        className="devices-table-select-sort-filter"
+        data-testid="select-sort-by-dropdown"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          None
+        </option>
+        <option
+          value="system_name"
+        >
+          System Name
+        </option>
+        <option
+          value="hdd_capacity"
+        >
+          HDD Capacity
+        </option>
+      </select>
+    </div>
+    <div>
+      <div
+        data-testid="devices-table"
+      >
+        <div
+          className="devices-table-container"
+          role="table"
+        >
+          <div
+            className="devices-table-header-container"
+          >
+            <div
+              className="devices-table-filter-row-container"
+              role="row"
+            >
+              <div
+                className="devices-table-filter-container"
+                colSpan={1}
+                role="columnheader"
+              >
+                <div
+                  className="devices-table-filter-title"
+                >
+                  
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+              <div
+                className="devices-table-filter-container"
+                colSpan={1}
+                role="columnheader"
+              >
+                <div
+                  className="devices-table-filter-title"
+                >
+                  Device Type:
+                </div>
+                <div>
+                  <select
+                    className="devices-table-select-filter"
+                    data-testid="type-filter"
+                    onChange={[Function]}
+                    value=""
+                  >
+                    <option
+                      value=""
+                    >
+                      All
+                    </option>
+                    <option
+                      value="Windows Server"
+                    >
+                      Windows Server
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div
+                className="devices-table-filter-container"
+                colSpan={1}
+                role="columnheader"
+              >
+                <div
+                  className="devices-table-filter-title"
+                >
+                  
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+              <div
+                className="devices-table-filter-container"
+                colSpan={1}
+                role="columnheader"
+              >
+                <div
+                  className="devices-table-filter-title"
+                >
+                  
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+              <div
+                className="devices-table-filter-container"
+                colSpan={1}
+                role="columnheader"
+              >
+                <div
+                  className="devices-table-filter-title"
+                >
+                  
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="devices-table-body-container"
+            role="rowgroup"
+          >
+            <div
+              className="devices-table-row-container"
+              role="row"
+            >
+              <div
+                role="cell"
+              >
+                <div
+                  className="devices-table-row-data-system-name"
+                >
+                  Abel-Server
+                </div>
+                 
+              </div>
+              <div
+                role="cell"
+              >
+                <div
+                  className="devices-table-row-data-type"
+                >
+                  Windows Server
+                </div>
+                 
+              </div>
+              <div
+                role="cell"
+              >
+                <div
+                  className="devices-table-row-data-hdd-capacity"
+                >
+                  100
+                  GB
+                </div>
+                 
+              </div>
+              <div
+                role="cell"
+              >
+                <div
+                  className="devices-table-edit-device-button"
+                  data-testid="devices-table-edit-button"
+                  onClick={[Function]}
+                >
+                  Edit
+                </div>
+                 
+              </div>
+              <div
+                role="cell"
+              >
+                <div
+                  className="devices-table-delete-device-button"
+                  data-testid="devices-table-delete-button"
+                  onClick={[Function]}
+                >
+                  Delete
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="pagination-container"
+        >
+          <div
+            className="pagination-buttons-container"
+          >
+            <div
+              className="pagination-button"
+              disabled={true}
+              onClick={[Function]}
+            >
+              &lt;&lt;
+            </div>
+            <div
+              className="pagination-button"
+              disabled={true}
+              onClick={[Function]}
+            >
+              &lt;
+            </div>
+            <div
+              className="pagination-button"
+              disabled={true}
+              onClick={[Function]}
+            >
+              &gt;
+            </div>
+            <div
+              className="pagination-button"
+              disabled={true}
+              onClick={[Function]}
+            >
+              &gt;&gt;
+            </div>
+          </div>
+          <div
+            className="pagination-info-container"
+          >
+            <div
+              className="page-of-text"
+            >
+              Page
+               
+              1
+               of 
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Renders the table with data matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="devices-table"
+  >
+    <div
+      className="devices-table-container"
+      role="table"
+    >
+      <div
+        className="devices-table-header-container"
+      >
+        <div
+          className="devices-table-filter-row-container"
+          role="row"
+        >
+          <div
+            className="devices-table-filter-container"
+            colSpan={1}
+            role="columnheader"
+          >
+            <div
+              className="devices-table-filter-title"
+            >
+              
+            </div>
+            <div>
+              
+            </div>
+          </div>
+          <div
+            className="devices-table-filter-container"
+            colSpan={1}
+            role="columnheader"
+          >
+            <div
+              className="devices-table-filter-title"
+            >
+              Device Type:
+            </div>
+            <div>
+              <select
+                className="devices-table-select-filter"
+                data-testid="type-filter"
+                onChange={[Function]}
+                value=""
+              >
+                <option
+                  value=""
+                >
+                  All
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            className="devices-table-filter-container"
+            colSpan={1}
+            role="columnheader"
+          >
+            <div
+              className="devices-table-filter-title"
+            >
+              
+            </div>
+            <div>
+              
+            </div>
+          </div>
+          <div
+            className="devices-table-filter-container"
+            colSpan={1}
+            role="columnheader"
+          >
+            <div
+              className="devices-table-filter-title"
+            >
+              
+            </div>
+            <div>
+              
+            </div>
+          </div>
+          <div
+            className="devices-table-filter-container"
+            colSpan={1}
+            role="columnheader"
+          >
+            <div
+              className="devices-table-filter-title"
+            >
+              
+            </div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="devices-table-body-container"
+        role="rowgroup"
+      />
+    </div>
+    <div
+      className="pagination-container"
+    >
+      <div
+        className="pagination-buttons-container"
+      >
+        <div
+          className="pagination-button"
+          disabled={true}
+          onClick={[Function]}
+        >
+          &lt;&lt;
+        </div>
+        <div
+          className="pagination-button"
+          disabled={true}
+          onClick={[Function]}
+        >
+          &lt;
+        </div>
+        <div
+          className="pagination-button"
+          disabled={true}
+          onClick={[Function]}
+        >
+          &gt;
+        </div>
+        <div
+          className="pagination-button"
+          disabled={true}
+          onClick={[Function]}
+        >
+          &gt;&gt;
+        </div>
+      </div>
+      <div
+        className="pagination-info-container"
+      >
+        <div
+          className="page-of-text"
+        >
+          Page
+           
+          1
+           of 
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
