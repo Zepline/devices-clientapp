@@ -1,7 +1,6 @@
 
 # **Devices (Client-Application) with ReactJS**
 
-
 ## Quick Features
 - **Add** new devices to the dashboard
 - **Edit** devices in the dashboard 
@@ -9,11 +8,9 @@
 - **Filter** devices by Type
 - **Sort** devices by Name or HDD Capacity
 
-
 &nbsp;
 
 ## Installation
----
 Install all dependencies and start the client (Client runs at **localhost:3001**).
 
 ```sh
@@ -21,12 +18,10 @@ cd devices-clientapp
 npm install
 npm start
 ```
----
 
 &nbsp;
 
 ## Table Documentation
----
 Column Structure for each Table Object:
 
 ```javascript
@@ -96,12 +91,10 @@ const {
         }
     }, useFilters, useSortBy, usePagination)
 ```
----
 
 &nbsp;
 
 ## API Documentation
----
 #### Device Properties:
 ```javascript
 const device = {
@@ -141,13 +134,11 @@ axios.delete(`API_Endpoint/DEVICE_ID`).then((response) => { console.log("Delete 
 &nbsp;
 
 ## Styles &nbsp; | &nbsp; Views &nbsp; | &nbsp; Features
----
 The dashboard table view is built using [React-Table](https://github.com/tannerlinsley/react-table).
 - All component styling is located in ***App.css***
 
 &nbsp;
 
----
 ### **Main Dashboard View**
 ##### *The main dashboard presents existing devices. Each device has a name, type, and HDD capacity.*
 ---
